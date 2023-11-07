@@ -1,0 +1,138 @@
+html, body { /*são Importantes para garantir de as imagens full screnn ocupem realmente 100% da tela */
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #BDC6C0;
+}
+.container{
+	margin: auto;
+}
+.esp_parallax {
+	background-image: url("imgs/casa%20alvino.jpg");
+	min-height: 600px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 0px 30px 0px
+}
+.esp_oppening_text{
+	padding: 10px;
+	margin: auto;
+	max-width: 800px;
+	text-align: center;
+}
+.esp_oppening_text h1{
+	background-color: #1118;
+	color: white;
+	letter-spacing: 2px;
+	font: 3.1rem / 1.6 "Merriweather", "Times New Roman";  
+}
+.esp_oppening_text h2{
+	background-color: #1118;
+	color: white;
+	font: 1.8rem / 1.6 "Merriweather", "Times New Roman";  
+}
+.esp_capital_letter::first-letter {
+	font-size: 3rem;
+	font-weight: bold;
+	float: left;
+	margin: -10px 10px -10px 00px;
+}
+.esp_text_body_container{
+	max-width:600px;
+	font: 1.1rem / 1.8 "Merriweather", "Times New Roman";
+	word-spacing: 2px;
+	margin: auto;	
+}
+.esp_video_container{
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+/*usado somente na div das imagens*/
+.esp_scroll_image_galery{
+	top: 0px;
+	margin: 50px auto;
+	height: 100vh;
+	width: 100%;
+	position: sticky;
+	top: 0px;
+	z-index: -1;   
+}
+/*usado  nas imagens, individualmente*/
+.scroll_image{
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: opacity 0.3s ease-in-out;
+}
+.text_upper{
+	padding: 3px  10px;
+	transform: translateY(-100vh);
+	margin: 60% 8vw 0% 10vw;
+	max-width: 40vw;
+	font: 1.1rem / 1.4 "Merriweather", "Times New Roman";
+	word-spacing: 2px;
+	background-color: #BDC6C0ee;
+}
+.esp_quotes{
+	font-size: 4rem;
+	font-weight: bold;
+	position: absolute;  
+	margin: -20px 0px 0px 0px;
+	color: #BCAF93;
+}
+
+.esp_image_full{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.esp_credits p{
+  font-size:0.8rem;
+}
+
+@media (max-width: 500px) {
+	.esp_text_body_container{
+		font-size: 0.9rem;
+		padding: 0px 5px;
+	}
+	.text_upper{
+		margin: 85vh auto 0vh auto;
+		padding: 1vh;
+		max-width: 90%;
+		font: 0.9rem / 1.6 "Merriweather", "Times New Roman";
+	}
+	`
+}
+@media (min-width: 501px) and (max-width: 900px) {
+	.text_upper{
+		margin: 85vh auto 0vh auto;
+		padding: 1vh 3vh;
+		max-width: 90%;
+		font: 1.0rem / 1.6 "Merriweather", "Times New Roman";
+	}    
+}
+
+/*
+<div class="esp_video_container">
+<!-- eucalíptos source -->
+<video width="100%" muted autoplay loop>
+<source src="video/drone%20eucalipto-cor_menor.mp4" type="video/mp4">
+<source src="video/drone%20eucalipto-cor_menor.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+*/
